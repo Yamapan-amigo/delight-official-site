@@ -1,7 +1,7 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
-const TO = "t.momose@delight-x.co.jp";
+const TO = "info@delight-x.co.jp";
 
 export async function POST(req: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
@@ -21,7 +21,7 @@ export async function POST(req: Request) {
     : "未入力";
 
   const { error } = await resend.emails.send({
-    from: "Delight Website <onboarding@resend.dev>",
+    from: "Delight Website <noreply@delight-x.co.jp>",
     to: TO,
     replyTo: email,
     subject: `【エントリー】${name}（${kana}）様`,
