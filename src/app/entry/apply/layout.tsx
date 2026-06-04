@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
-import { SITE_URL, COMPANY } from "@/lib/seo";
+import { SITE_URL } from "@/lib/seo";
 
 const pageUrl = `${SITE_URL}/entry/apply`;
 
