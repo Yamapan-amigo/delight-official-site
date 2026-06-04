@@ -63,7 +63,7 @@ export default function HeroBlob() {
       }}
     >
       {/* バウンスイン（球体出現後に登場） */}
-      <div style={{ width: "100%", height: "100%", opacity: 0, animation: "blobBounceIn 1.2s ease-out forwards", animationDelay: "4.8s" }}>
+      <div style={{ width: "100%", height: "100%", opacity: 0, animation: "blobBounceIn 1.2s ease-out 4.8s forwards" }}>
       {/* グロー */}
       <div
         style={{

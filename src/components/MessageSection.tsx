@@ -101,6 +101,7 @@ export default function MessageSection() {
                 src="/ceo.jpg"
                 alt="代表取締役"
                 fill
+                sizes="(max-width: 640px) 100vw, 384px"
                 className="object-cover object-top"
                 priority
               />
