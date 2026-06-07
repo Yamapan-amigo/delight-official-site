@@ -36,9 +36,10 @@ export default function Header() {
     return () => clearTimeout(t);
   }, []);
 
-  // アクティブセクション検知（スクロール位置ベース）
+  // アクティブセクション検知（スクロール位置ベース・トップページのみ）
   useEffect(() => {
-    if (pathname !== "/") { setActiveSection(null); return; }
+    // トップページ以外ではスクロール監視しない（ハイライトはrender時に派生値で無効化）
+    if (pathname !== "/") return;
 
     const updateActive = () => {
       const headerH = 100;
@@ -94,6 +95,9 @@ export default function Header() {
     return () => { document.body.style.overflow = ""; };
   }, [isMenuOpen]);
 
+  // トップページ以外ではアクティブセクションのハイライトを出さない（pathnameからの派生値）
+  const currentSection = pathname === "/" ? activeSection : null;
+
   return (
     <>
     <header
@@ -120,7 +124,7 @@ export default function Header() {
         <nav className="hidden min-[1200px]:flex items-center gap-1">
           {navItems.map((item) => {
             const sectionId = item.href.startsWith("/#") ? item.href.slice(2) : null;
-            const isActive = sectionId ? activeSection === sectionId : pathname === item.href;
+            const isActive = sectionId ? currentSection === sectionId : pathname === item.href;
             return (
               <Link
                 key={item.href}
