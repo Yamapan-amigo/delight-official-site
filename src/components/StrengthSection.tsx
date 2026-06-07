@@ -208,8 +208,7 @@ function StrengthItem({
       <div
         className="relative mb-6"
         style={visible ? {
-          animation: `circleFloat 5s ease-in-out infinite`,
-          animationDelay: item.floatDelay,
+          animation: `circleFloat 5s ease-in-out ${item.floatDelay} infinite`,
         } : {}}
       >
         {/* パルスリング */}
@@ -217,8 +216,7 @@ function StrengthItem({
           className="absolute -inset-2 rounded-full pointer-events-none"
           style={{
             background: item.gradient,
-            animation: visible ? `ringPulse 3s ease-out infinite` : "none",
-            animationDelay: item.floatDelay,
+            animation: visible ? `ringPulse 3s ease-out ${item.floatDelay} infinite` : "none",
           }}
         />
         {/* グラデーションボーダー円 */}
