@@ -116,7 +116,7 @@ export default function BusinessSection() {
     <section id="business" className="py-28 scroll-mt-28 relative overflow-hidden" style={{ background: "#f9fafb" }}>
       {/* 背景画像 */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/business-bg.jpg" alt="" className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none" style={{ opacity: 0.35 }} />
+      <img src="/business-bg-2.jpg" alt="" className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none" style={{ opacity: 0.35 }} />
       <div className="absolute inset-0 pointer-events-none" style={{ background: "rgba(249,250,251,0.55)" }} />
       <div className="absolute inset-x-0 top-0 h-56 pointer-events-none" style={{ background: "linear-gradient(to bottom, #f9fafb 40%, transparent)" }} />
       <div className="absolute inset-x-0 bottom-0 h-56 pointer-events-none" style={{ background: "linear-gradient(to top, #ffffff 40%, transparent)" }} />
