@@ -11,6 +11,12 @@ export default function Footer() {
         >
           個人情報保護方針
         </Link>
+        <Link
+          href="/security"
+          className="text-xs text-gray-500 hover:text-gray-300 transition-colors duration-200"
+        >
+          情報セキュリティ方針
+        </Link>
       </div>
       <p className="text-sm text-gray-500">
         &copy;{year} Delight Co., Ltd. All Rights Reserved.
