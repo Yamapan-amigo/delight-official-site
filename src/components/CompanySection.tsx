@@ -53,7 +53,7 @@ const companyData = [
   { label: "資本金", value: "3,000,000円" },
   { label: "設立", value: "2024年1月" },
   { label: "事業内容", value: "ITソリューション事業\nAI業務効率化支援事業" },
-  { label: "顧問", value: "税理士　小林 弘和" },
+  { label: "顧問", value: "税理士　小林 弘和\n社会保険労務士法人ＭＥＩＪＩ" },
   { label: "取引銀行", value: "みずほ銀行、巣鴨信用金庫" },
   { label: "取得認証", value: "ISO/IEC 27001:2022\n（情報セキュリティマネジメントシステム）" },
 ];
