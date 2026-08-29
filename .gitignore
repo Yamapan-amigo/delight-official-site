@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Developer標準: 一時ファイルの唯一の置き場（init-project.sh が追記）
+_tmp/
