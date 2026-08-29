@@ -55,6 +55,7 @@ const companyData = [
   { label: "事業内容", value: "ITソリューション事業\nAI業務効率化支援事業" },
   { label: "顧問", value: "税理士　小林 弘和" },
   { label: "取引銀行", value: "みずほ銀行、巣鴨信用金庫" },
+  { label: "取得認証", value: "ISO/IEC 27001:2022\n（情報セキュリティマネジメントシステム）" },
 ];
 
 export default function CompanySection() {
@@ -91,7 +92,7 @@ export default function CompanySection() {
 
         <FadeIn delay={150}>
           <div className="grid grid-cols-1 min-[1200px]:grid-cols-2 min-[1200px]:gap-x-8">
-            {[companyData.slice(0, 4), companyData.slice(4)].map((col, ci) => (
+            {[companyData.slice(0, 5), companyData.slice(5)].map((col, ci) => (
               <div key={ci} className={`rounded-2xl overflow-hidden border border-white/10 ${ci === 1 ? "mt-8 min-[1200px]:mt-0" : ""}`}>
                 {col.map(({ label, value }, i) => (
                   <div

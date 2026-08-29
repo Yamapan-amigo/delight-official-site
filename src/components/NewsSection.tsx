@@ -37,6 +37,7 @@ const categoryStyle: Record<Category, string> = {
 };
 
 const news: { date: string; category: Category; title: string }[] = [
+  { date: "2026.08.17", category: "お知らせ", title: "ISO/IEC 27001:2022（情報セキュリティマネジメントシステム）認証を取得しました。" },
   { date: "2026.04.01", category: "お知らせ", title: "弊社ウェブサイトをリニューアルいたしました。" },
 ];
 
